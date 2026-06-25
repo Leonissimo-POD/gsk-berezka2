@@ -4,60 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная | ГСК Березка-2</title>
+  <meta name="description" content="Безопасность, порядок, прозрачные финансы и понятный план развития.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-bg"></div>
 <header class="topbar">
-  <div class="brand">
+  <a class="brand" href="index.html" aria-label="На главную">
     <div class="logo">Б2</div>
     <div>
       <strong>ГСК «Березка-2»</strong>
-      <span>Открытое управление</span>
+      <span>Digital-портал кооператива</span>
     </div>
-  </div>
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  <nav id="nav"><a href="index.html">Главная</a>
-<a href="about.html">О ГСК</a>
-<a href="finance.html">Финансы</a>
-<a href="projects.html">Проекты</a>
-<a href="meetings.html">Собрания</a>
-<a href="appeals.html">Обращения</a>
-<a href="documents.html">Документы</a>
-<a href="contacts.html">Контакты</a></nav>
+  </a>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Открыть меню">☰</button>
+  <nav id="nav"><a href="index.html">Главная</a><a href="about.html">О ГСК</a><a href="finance.html">Финансы</a><a href="projects.html">Проекты</a><a href="meetings.html">Собрания</a><a href="appeals.html">Обращения</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a></nav>
 </header>
 
 <main>
   <section class="hero">
-    <div>
-      <p class="eyebrow">Цифровой портал кооператива</p>
+    <div class="hero-text">
+      <p class="eyebrow">Версия 1.1 · открытое управление</p>
       <h1>Открытое управление ГСК «Березка-2»</h1>
-      <p>Коротко о состоянии кооператива, планах, проектах и обращениях.</p>
+      <p>Безопасность, порядок, прозрачные финансы и понятный план развития.</p>
       <div class="actions">
         <a class="btn primary" href="appeals.html">Сообщить о проблеме</a>
-        <a class="btn" href="projects.html">Посмотреть проекты</a>
+        <a class="btn ghost" href="projects.html">План развития</a>
       </div>
+    </div>
+    <div class="hero-card">
+      <div class="pulse"></div>
+      <h3>Фокус 2026–2027</h3>
+      <ul>
+        <li>Освещение территории</li>
+        <li>Видеонаблюдение</li>
+        <li>Очистка снега</li>
+        <li>Прозрачная отчетность</li>
+      </ul>
     </div>
   </section>
   
-<section class="cards">
-  <article class="card"><h3>Текущее состояние</h3><p>Старый асфальт, слабое освещение, нет ворот, охраны и видеонаблюдения. Задача — привести ГСК к нормальному уровню безопасности и порядка.</p></article>
-  <article class="card"><h3>Первый приоритет</h3><p>Освещение, уборка снега, видеонаблюдение на въезде и ключевых точках, запуск прозрачной отчетности.</p></article>
-  <article class="card"><h3>Принцип управления</h3><p>Открытые планы, понятные бюджеты, регулярные отчеты и обсуждение решений с членами кооператива.</p></article>
+<section class="dashboard">
+  <div class="kpi"><span>Текущее состояние</span><b>Аудит</b><small>идет сбор данных</small></div>
+  <div class="kpi"><span>Приоритет №1</span><b>Свет</b><small>безопасность и порядок</small></div>
+  <div class="kpi"><span>Проектов в плане</span><b>6</b><small>первый контур развития</small></div>
+  <div class="kpi"><span>Формат управления</span><b>Открыто</b><small>отчеты и обсуждения</small></div>
 </section>
-<section class="panel">
-  <h2>Ключевые показатели</h2>
-  <div class="kpi-grid">
-    <div class="kpi"><span>Гаражей</span><b>уточнить</b></div>
-    <div class="kpi"><span>Должников</span><b>уточнить</b></div>
-    <div class="kpi"><span>Проектов</span><b>6</b></div>
-    <div class="kpi"><span>Следующее собрание</span><b>назначить</b></div>
+
+<section class="split">
+  <div class="panel">
+    <h2>С чего начинаем</h2>
+    <p>Сначала приводим в порядок базовые вещи: освещение, снег, контроль территории, учет имущества и регулярную отчетность. Большие проекты вроде асфальта лучше запускать после аудита и понятной сметы.</p>
+    <div class="timeline">
+      <div><b>1</b><span>Аудит ГСК</span></div>
+      <div><b>2</b><span>План работ</span></div>
+      <div><b>3</b><span>Бюджет</span></div>
+      <div><b>4</b><span>Решение собрания</span></div>
+    </div>
   </div>
+  <div class="panel accent">
+    <h2>Главная цель</h2>
+    <p>Сделать ГСК безопасным, ухоженным и управляемым: чтобы каждый участник понимал, куда идут деньги, какие решения приняты и что меняется на территории.</p>
+  </div>
+</section>
+
+<section class="cards">
+  <article class="card"><div class="icon">💡</div><h3>Освещение</h3><p>Добавить свет в темных зонах, заменить старые светильники, снизить риски на территории.</p></article>
+  <article class="card"><div class="icon">🎥</div><h3>Камеры</h3><p>Начать с въезда, выезда и основных проездов. Архив и оборудование — в комнате охраны.</p></article>
+  <article class="card"><div class="icon">🚧</div><h3>Ворота</h3><p>Контроль доступа через брелоки, карты или телефон после подготовки бюджета.</p></article>
+  <article class="card"><div class="icon">❄️</div><h3>Снег</h3><p>Заключить договор на сезонную или разовую очистку дорог зимой.</p></article>
 </section>
 
 </main>
 
 <footer>
-  <p>ГСК «Березка-2». Информационный портал. Не размещайте на сайте персональные данные и закрытые финансовые сведения.</p>
+  <div>
+    <strong>ГСК «Березка-2»</strong>
+    <p>Информационный портал. Персональные данные и закрытые сведения не публикуются.</p>
+  </div>
+  <a href="documents.html">Документы</a>
 </footer>
 <script src="js/main.js"></script>
 </body>

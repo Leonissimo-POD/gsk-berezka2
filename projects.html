@@ -4,52 +4,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Проекты | ГСК Березка-2</title>
+  <meta name="description" content="Приоритетные инициативы: свет, камеры, ворота, снег, порядок.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-bg"></div>
 <header class="topbar">
-  <div class="brand">
+  <a class="brand" href="index.html" aria-label="На главную">
     <div class="logo">Б2</div>
     <div>
       <strong>ГСК «Березка-2»</strong>
-      <span>Открытое управление</span>
+      <span>Digital-портал кооператива</span>
     </div>
-  </div>
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  <nav id="nav"><a href="index.html">Главная</a>
-<a href="about.html">О ГСК</a>
-<a href="finance.html">Финансы</a>
-<a href="projects.html">Проекты</a>
-<a href="meetings.html">Собрания</a>
-<a href="appeals.html">Обращения</a>
-<a href="documents.html">Документы</a>
-<a href="contacts.html">Контакты</a></nav>
+  </a>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Открыть меню">☰</button>
+  <nav id="nav"><a href="index.html">Главная</a><a href="about.html">О ГСК</a><a href="finance.html">Финансы</a><a href="projects.html">Проекты</a><a href="meetings.html">Собрания</a><a href="appeals.html">Обращения</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a></nav>
 </header>
 
 <main>
   <section class="hero">
-    <div>
-      <p class="eyebrow">Цифровой портал кооператива</p>
+    <div class="hero-text">
+      <p class="eyebrow">Версия 1.1 · открытое управление</p>
       <h1>Проекты развития</h1>
-      <p>Освещение, видеонаблюдение, ворота, уборка снега и другие инициативы.</p>
+      <p>Приоритетные инициативы: свет, камеры, ворота, снег, порядок.</p>
       <div class="actions">
         <a class="btn primary" href="appeals.html">Сообщить о проблеме</a>
-        <a class="btn" href="projects.html">Посмотреть проекты</a>
+        <a class="btn ghost" href="projects.html">План развития</a>
       </div>
+    </div>
+    <div class="hero-card">
+      <div class="pulse"></div>
+      <h3>Фокус 2026–2027</h3>
+      <ul>
+        <li>Освещение территории</li>
+        <li>Видеонаблюдение</li>
+        <li>Очистка снега</li>
+        <li>Прозрачная отчетность</li>
+      </ul>
     </div>
   </section>
   
 <section class="project-list">
-  <article class="project"><span class="status planned">План</span><h3>Уличное освещение</h3><p>Аудит темных зон, замена светильников, установка новых точек света.</p></article>
-  <article class="project"><span class="status planned">План</span><h3>Видеонаблюдение</h3><p>Камеры на въезде, выезде и основных проездах.</p></article>
-  <article class="project"><span class="status planned">План</span><h3>Автоматические ворота</h3><p>Контроль доступа и снижение прохода посторонних.</p></article>
-  <article class="project"><span class="status planned">План</span><h3>Уборка снега</h3><p>Договор на сезонную или разовую очистку территории.</p></article>
+  <article class="project"><span class="status high">Высокий приоритет</span><h3>Уличное освещение</h3><p>Аудит темных зон, замена старых светильников, расчет новых точек света.</p><div class="progress"><span style="width:15%"></span></div></article>
+  <article class="project"><span class="status high">Высокий приоритет</span><h3>Видеонаблюдение</h3><p>Первый контур: въезд, выезд, основные проезды. Сервер — в комнате охраны.</p><div class="progress"><span style="width:10%"></span></div></article>
+  <article class="project"><span class="status medium">Средний приоритет</span><h3>Автоматические ворота</h3><p>После расчета бюджета и обсуждения доступа для членов ГСК.</p><div class="progress"><span style="width:5%"></span></div></article>
+  <article class="project"><span class="status high">Высокий приоритет</span><h3>Уборка снега</h3><p>Договор на зимний сезон или регламент разовой очистки после снегопадов.</p><div class="progress"><span style="width:20%"></span></div></article>
+  <article class="project"><span class="status medium">Средний приоритет</span><h3>Асфальт</h3><p>После технического аудита: карта повреждений, смета, очередность участков.</p><div class="progress"><span style="width:0%"></span></div></article>
+  <article class="project"><span class="status low">Позже</span><h3>Эстакада</h3><p>Обсудить после закрытия базовых вопросов безопасности и эксплуатации.</p><div class="progress"><span style="width:0%"></span></div></article>
 </section>
 
 </main>
 
 <footer>
-  <p>ГСК «Березка-2». Информационный портал. Не размещайте на сайте персональные данные и закрытые финансовые сведения.</p>
+  <div>
+    <strong>ГСК «Березка-2»</strong>
+    <p>Информационный портал. Персональные данные и закрытые сведения не публикуются.</p>
+  </div>
+  <a href="documents.html">Документы</a>
 </footer>
 <script src="js/main.js"></script>
 </body>

@@ -4,55 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>О ГСК | ГСК Березка-2</title>
+  <meta name="description" content="Общая информация, текущее состояние и инфраструктура ГСК.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-bg"></div>
 <header class="topbar">
-  <div class="brand">
+  <a class="brand" href="index.html" aria-label="На главную">
     <div class="logo">Б2</div>
     <div>
       <strong>ГСК «Березка-2»</strong>
-      <span>Открытое управление</span>
+      <span>Digital-портал кооператива</span>
     </div>
-  </div>
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  <nav id="nav"><a href="index.html">Главная</a>
-<a href="about.html">О ГСК</a>
-<a href="finance.html">Финансы</a>
-<a href="projects.html">Проекты</a>
-<a href="meetings.html">Собрания</a>
-<a href="appeals.html">Обращения</a>
-<a href="documents.html">Документы</a>
-<a href="contacts.html">Контакты</a></nav>
+  </a>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Открыть меню">☰</button>
+  <nav id="nav"><a href="index.html">Главная</a><a href="about.html">О ГСК</a><a href="finance.html">Финансы</a><a href="projects.html">Проекты</a><a href="meetings.html">Собрания</a><a href="appeals.html">Обращения</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a></nav>
 </header>
 
 <main>
   <section class="hero">
-    <div>
-      <p class="eyebrow">Цифровой портал кооператива</p>
+    <div class="hero-text">
+      <p class="eyebrow">Версия 1.1 · открытое управление</p>
       <h1>Паспорт кооператива</h1>
-      <p>Основная информация о территории, инфраструктуре и текущем состоянии.</p>
+      <p>Общая информация, текущее состояние и инфраструктура ГСК.</p>
       <div class="actions">
         <a class="btn primary" href="appeals.html">Сообщить о проблеме</a>
-        <a class="btn" href="projects.html">Посмотреть проекты</a>
+        <a class="btn ghost" href="projects.html">План развития</a>
       </div>
+    </div>
+    <div class="hero-card">
+      <div class="pulse"></div>
+      <h3>Фокус 2026–2027</h3>
+      <ul>
+        <li>Освещение территории</li>
+        <li>Видеонаблюдение</li>
+        <li>Очистка снега</li>
+        <li>Прозрачная отчетность</li>
+      </ul>
     </div>
   </section>
   
-<section class="panel"><h2>Паспорт ГСК</h2>
-<table><tr><th>Показатель</th><th>Значение</th></tr>
-<tr><td>Количество гаражей</td><td>Заполнить</td></tr>
-<tr><td>Комната охраны</td><td>Есть, требует решения по использованию</td></tr>
-<tr><td>Ворота</td><td>Нет</td></tr>
-<tr><td>Видеонаблюдение</td><td>Нет</td></tr>
-<tr><td>Уличное освещение</td><td>Слабое</td></tr>
-<tr><td>Очистка снега</td><td>Не организована</td></tr>
-</table></section>
+<section class="panel">
+  <h2>Текущее состояние</h2>
+  <div class="status-grid">
+    <div><span>Асфальт</span><b>старый</b></div>
+    <div><span>Крыши</span><b>делают собственники</b></div>
+    <div><span>Охрана</span><b>нет</b></div>
+    <div><span>Комната охраны</span><b>есть</b></div>
+    <div><span>Освещение</span><b>слабое</b></div>
+    <div><span>Видеонаблюдение</span><b>нет</b></div>
+    <div><span>Ворота</span><b>нет</b></div>
+    <div><span>Снег</span><b>не чистят</b></div>
+  </div>
+</section>
+<section class="panel">
+  <h2>Паспорт ГСК</h2>
+  <table><tr><th>Показатель</th><th>Значение</th></tr>
+  <tr><td>Количество гаражей</td><td>уточнить</td></tr>
+  <tr><td>Количество членов ГСК</td><td>уточнить</td></tr>
+  <tr><td>Правление</td><td>уточнить</td></tr>
+  <tr><td>Ревизионная комиссия</td><td>уточнить</td></tr></table>
+</section>
 
 </main>
 
 <footer>
-  <p>ГСК «Березка-2». Информационный портал. Не размещайте на сайте персональные данные и закрытые финансовые сведения.</p>
+  <div>
+    <strong>ГСК «Березка-2»</strong>
+    <p>Информационный портал. Персональные данные и закрытые сведения не публикуются.</p>
+  </div>
+  <a href="documents.html">Документы</a>
 </footer>
 <script src="js/main.js"></script>
 </body>
