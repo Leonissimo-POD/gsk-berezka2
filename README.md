@@ -1,29 +1,23 @@
-# ГСК Березка-2 Digital — React + Vite
+# ГСК Березка-2 Digital — React + Vite v2.1
 
-## Что это
-Новая версия сайта на React + Vite для GitHub Pages.
+## Как обновить сайт
 
-## Как загрузить
 1. Распакуйте ZIP.
-2. Удалите старые файлы в репозитории или загрузите новые поверх старых.
-3. В GitHub откройте Settings → Pages.
-4. В разделе Build and deployment выберите Source: **GitHub Actions**.
-5. После commit откройте вкладку Actions и дождитесь успешного deploy.
+2. В репозитории GitHub удалите старые файлы или загрузите эти файлы поверх старых.
+3. Важно: должна загрузиться папка `.github/workflows/deploy.yml`.
+4. Settings → Pages → Source: GitHub Actions.
+5. После commit откройте вкладку Actions и дождитесь зеленой галочки.
 
-## Что важно
-- Это уже не набор отдельных HTML-страниц.
-- Основной код находится в `src/App.jsx`.
-- Данные по должникам находятся в `src/data/debtors.js`.
-- Данные по решениям собрания и проектам находятся в `src/data/content.js`.
+## Если белый экран
 
-## Локальный запуск
-Если установлен Node.js:
-```bash
-npm install
-npm run dev
-```
+Проверьте:
+- в репозитории есть папка `.github/workflows/deploy.yml`;
+- во вкладке Actions последний workflow зеленый;
+- сайт открыт по адресу `https://leonissimo-pod.github.io/gsk-berezka2/`.
 
-## Сборка
-```bash
-npm run build
-```
+## Где менять данные
+
+- `src/data/content.js` — председатель, решения собрания, проекты.
+- `src/data/debtors.js` — обезличенный список боксов-должников.
+- `src/main.jsx` — структура страниц.
+- `src/styles.css` — дизайн.
