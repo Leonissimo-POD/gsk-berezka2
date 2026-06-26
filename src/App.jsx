@@ -284,10 +284,7 @@ function App() {
   };
 
   return <Layout page={page} setPage={setPage}>{pages[page]}</Layout>;
-}
-
-createRoot(document.getElementById('root')).render(<App />);
-```js
+  ```js
 React.useEffect(() => {
   initGA()
 }, [])
@@ -296,3 +293,6 @@ React.useEffect(() => {
   trackPageView(page)
 }, [page])
 ```
+}
+
+createRoot(document.getElementById('root')).render(<App />);
