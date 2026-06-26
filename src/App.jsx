@@ -287,3 +287,12 @@ function App() {
 }
 
 createRoot(document.getElementById('root')).render(<App />);
+```js
+React.useEffect(() => {
+  initGA()
+}, [])
+
+React.useEffect(() => {
+  trackPageView(page)
+}, [page])
+```
