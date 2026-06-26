@@ -2,11 +2,11 @@
 // Замените G-XXXXXXXXXX на ваш Measurement ID из Google Analytics.
 // Пример ID: G-ABC123DEF4
 
-export const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+export const GA_MEASUREMENT_ID = 'G-PSS03R48QM';
 
 export function initGA() {
-  if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === 'G-XXXXXXXXXX') {
-    console.warn('GA4 Measurement ID не задан. Замените G-XXXXXXXXXX в src/analytics.js');
+  if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === 'G-PSS03R48QM') {
+    console.warn('GA4 Measurement ID не задан. Замените G-PSS03R48QM в src/analytics.js');
     return;
   }
 
@@ -27,7 +27,7 @@ export function initGA() {
 }
 
 export function trackPageView(pageName) {
-  if (!window.gtag || !GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === 'G-XXXXXXXXXX') return;
+  if (!window.gtag || !GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === 'G-PSS03R48QM') return;
 
   window.gtag('event', 'page_view', {
     page_title: pageName,
@@ -37,7 +37,7 @@ export function trackPageView(pageName) {
 }
 
 export function trackDownload(fileName) {
-  if (!window.gtag || !GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === 'G-XXXXXXXXXX') return;
+  if (!window.gtag || !GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === 'G-PSS03R48QM') return;
 
   window.gtag('event', 'file_download', {
     file_name: fileName
