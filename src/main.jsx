@@ -16,3 +16,6 @@ function ContactsPage(){return<><Hero eyebrow="Контакты" title="Конт
 function DataTable({title,rows}){return<section className="panel"><h2>{title}</h2><table><tbody>{rows.map(([a,b])=><tr key={a}><th>{a}</th><td>{b}</td></tr>)}</tbody></table></section>}
 function App(){const[page,setPage]=useState('home');const pages={home:<HomePage setPage={setPage}/>,about:<AboutPage/>,finance:<FinancePage/>,projects:<ProjectsPage/>,meetings:<MeetingsPage/>,appeals:<AppealsPage/>,documents:<DocumentsPage/>,debtors:<DebtorsPage/>,contacts:<ContactsPage/>};return<Layout page={page} setPage={setPage}>{pages[page]}</Layout>}
 createRoot(document.getElementById('root')).render(<App/>);
+```js
+import { initGA, trackPageView, trackDownload } from './analytics'
+```
